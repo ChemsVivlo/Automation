@@ -1,0 +1,335 @@
+/*Font family is inherited to all the body elements unless otherwise specified*/
+/*font: font-style font-variant font-weight font-size/line-height font-family*/
+/*font: small/1.6em Verdana, Helvetica, Arial, sans-serif;*/
+body{
+  background-color: #fafafa;
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+  font-size: medium;
+  /*xx-small x-small small medium large x-large xx-large*/
+  line-height: 1.6em;
+  /*margin: 0px;*/
+}
+h1{
+  font-size: 150%;
+}
+h2{
+  font-size: 1.3em;
+}
+h1,h2{
+  color: Navy;
+  font-weight: bold;
+  border-top: thin dotted #888888;
+}
+
+p{
+  color: Black;
+}
+blockquote{
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-style: italic;
+  font-weight: bold;
+}
+blockquote.blackElementText{
+  color:Black;
+}
+em{
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+li.styledList{
+  padding-top: 5px;
+  margin-left: 250px;
+  list-style-position: outside;
+  list-style-image: url("Imgs/CheckIcon04.jfif");
+  font-size: 1.3em;
+}
+
+
+table{
+  margin-left: 20px;
+  margin-right: 20px;
+  border: thin solid;
+  border-collapse: collapse;
+  caption-side: bottom;
+}
+
+td{
+  border: thin dotted gray;
+  padding: 18px;
+}
+
+
+th{
+  vertical-align: top;
+  border: thin solid;
+  padding: 17px;
+  background-color: #F2F2FA;
+}
+
+
+table table th{
+  background-color: inherit;
+}
+
+
+table#contactInfo{
+  margin: 0px;
+  border: dotted thin;
+}
+
+table#contactInfo th{
+  background: inherit;
+  text-align: right;
+  padding: 15px 0px 0px 15px;
+  border: none;
+}
+
+table#contactInfo td{
+  vertical-align: top;
+  text-align: left;
+  padding: 15px 20px 10px 10px;
+  border: none;
+}
+
+table#contactInfo table{
+  border: none;
+  margin: 0px;
+}
+
+table#contactInfo table th{
+  text-align: left;
+  padding-left: 0px;
+  padding-top: 0px;
+}
+
+table#contactInfo table td{
+  padding: 0px 0px 10px 12px;
+}
+
+caption{
+  font-style:italic;
+  padding-top: 8px;
+  font-size: 0.7em;
+  font-weight: bold;
+}
+
+.leftAlignedText{
+  text-align: left;
+}
+
+.rightAlignedText{
+  text-align: right;
+}
+
+#allContent{
+  background-color: #fafafa;
+  width: 1265px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#discount{
+  position: fixed;
+  top: 20%;
+  left: 15%;
+}
+#discount img{
+  border: solid;
+  border-width: 1px;
+}
+#discount a:link{
+  border: none;
+}
+#discount a:visited{
+  border: none;
+}
+
+#humanoid{
+  position: absolute;
+  top: -1%;
+  right: 11%;
+  z-index: 99;
+  /*width: 600px;*/
+}
+
+#aboutUs{
+  float:left;
+  width: 850px;
+  background: #efe5d0 url(Imgs/TechDesktop.jfif) top left;
+  text-align: center;
+  margin: 0px 10px 10px 10px;
+  padding: 15px;
+}
+#aboutUs H1{
+  color: White;
+  border-top: none;
+}
+#aboutUs H1 span{
+  background-color: #02011A;
+}
+#aboutUs p{
+  color: White;
+}
+
+#iasIntroduction{
+  margin: 0px 10px 10px 900px;
+  text-align: center;
+  border-width: 1px;
+  border-style: solid;
+  background-color: #a7cece;
+  padding: 20px;
+}
+#introduction{
+  line-height: 1.9em;
+  font-style: italic;
+  color: #444444;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  /*background-image: url(Imgs/Star01.jfif);
+  background-repeat: no-repeat;
+  background-position: 0% 0%;*/
+}
+#introduction a:link{
+  color: Green;
+}
+#introduction a:visited{
+  color: #333333;
+}
+#introduction a:focus{
+  color: Fuchsia;
+}
+#introduction a:hover{
+  background: #f88396;
+  color: #0d5353;
+}
+#introduction a:active{
+  color: Olive;
+}
+
+#footer{
+  text-align: center;
+  font-size: 0.7em;
+  height: 55px;
+  margin: 10px 10px 0px 10px;
+  background-color: #02011A;
+  clear: both;
+}
+#footer p{
+  color: White;
+}
+#footer p span{
+  font-size: 0.95em;
+}
+
+
+#HMIs{
+  /*font: font-style font-variant font-weight font-size/line-height font-family   (use commas in between font names)*/
+  background: White;
+  border: Gray 1px ridge;
+  width: 40%;
+  /*Top Right Bottom Left*/
+  padding: 0% 1% 1% 1%;
+  margin-left: 29%;
+  text-align: center;
+  line-height: 1.7;
+}
+#HMIs H1,H2{
+  color: Black;
+}
+#HMIs H1{
+  border-top: none;
+}
+
+.PLCBrand{
+  font-style: italic;
+  font-weight: bold;
+}
+.PLCModel{
+  font-style: oblique;
+}
+
+.textFamilyMonospace{
+  font-family: Courier, "Courier New", "Andale Mono", monospace;
+}
+.textFamilyFantasy{
+  font-family: fantasy;
+}
+.colorTextAqua{
+  color: Aqua;
+}
+.colorTextBlack{
+  color: Black;
+}
+.colorTextBlue{
+  color: Blue;
+}
+.colorTextFuchshia{
+  color: Fuchsia;
+}
+.colorTextGray{
+  color: Gray;
+}
+.colorTextGreen{
+  color: Green;
+}
+.colorTextLime{
+  color: Lime;
+}
+.colorTextMaroon{
+  color: Maroon;
+}
+.colorTextNavy{
+  color: Navy;
+}
+.colorTextOlive{
+  color: Olive;
+}
+.colorTextOrange{
+  color: Orange;
+}
+.colorTextPurple{
+  color: Purple;
+}
+.colorTextRed{
+  color: Red;
+}
+.colorTextSilver{
+  color: Silver;
+}
+.colorTextTeal{
+  color: Teal;
+}
+.colorTextWhite{
+  color: White;
+}
+.colorTextYellow{
+  color: Yellow;
+}
+.weightTextLighter{
+  font-weight: lighter;
+}
+.weightTextNormal{
+  font-weight: normal;
+}
+.weightTextBold{
+  font-weight: bold;
+}
+.weightTextBolder{
+  font-weight: bolder;
+}
+.decorationTextUnderline{
+  text-decoration: underline;
+}
+.decorationTextOverline{
+  text-decoration: overline;
+}
+.decorationTextLineThrough{
+  text-decoration: line-through;
+}
+.decorationTextBlink{
+  text-decoration: blink;
+}
+.styleTextItalic{
+  font-style: italic;
+}

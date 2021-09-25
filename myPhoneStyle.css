@@ -1,0 +1,7 @@
+body{
+  background-color: #fafafa;
+  font-family: Courier, "PT Mono", "Space Mono", "Roboto Mono", monospace;
+  font-size: medium;
+  /*xx-small x-small small medium large x-large xx-large*/
+  line-height: 1.4em;
+}
