@@ -404,7 +404,7 @@ caption{
   margin: 10px;
   display: grid;
   grid-template-columns: auto auto auto;
-  grid-template-rows: auto auto;  
+  grid-template-rows: auto auto;
 }
 
 .grid-item-01{
@@ -416,9 +416,40 @@ caption{
   margin: 10px;
 }
 
+.button{
+  color: white;
+  border: none;
+  background: rgba(1,1,64,1);
+  padding: 7px 10px;
+
+  transform: translate(0px, -20px) scale(1, 1.1);
 
 
+  -webkit-transition: all 200ms ease; /*chrome and safari support*/
+  -moz-transition: all 200ms ease; /*mozila support*/
+  -ms-transition: all 200ms ease; /*opera support*/
+  -o-transition: all 200ms ease; /*opera support*/
+}
 
+.button:hover{
+  background: rgba(1,1,64,0.75);
+  padding: 7px 11px;
+}
+
+.hmi-h1-animation{
+  text-align: center;
+/*  animation: red-to-black;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate; */
+
+  -webkit-animation: red-to-black 4s linear 0s infinite alternate;
+  -moz-animation: red-to-black 4s linear 0s infinite alternate;
+  -ms-animation: red-to-black 4s linear 0s infinite alternate;
+  -o-animation: red-to-black 4s linear 0s infinite alternate;
+}
 
 .PLCBrand{
   font-style: italic;
@@ -511,4 +542,19 @@ caption{
 }
 .styleTextItalic{
   font-style: italic;
+}
+
+@keyframes red-to-black{
+  0%{
+    background: red;
+    transform: translate(0px, 0px);
+  }
+  50%{
+    background: yellow;
+    transform: translate(10px, 0px);
+  }
+  100%{
+    background: black;
+    transform: translate(20px, 0px);
+  }
 }
